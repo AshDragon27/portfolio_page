@@ -1,0 +1,111 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: #57227c;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 45%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+/* Button styling */
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #ddd;
+}
+
+body.dark-mode header {
+  background: #1f1f1f;
+}
+
+body.dark-mode nav a {
+  color: #ddd;
+}
+
+body.dark-mode .hero {
+  background: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode .project-card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark-mode footer {
+  background: #1f1f1f;
+  color: #ccc;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
